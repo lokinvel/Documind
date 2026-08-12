@@ -344,7 +344,7 @@ with st.sidebar:
                         embedder = get_embedder()
                         store_chunks(chunks, embedder)
                         st.success(f"Indexed {len(pdf_paths)} doc(s) · {len(chunks)} chunks")
-                        st.rerun()
+                        st.return()
                 except Exception as e:
                     st.error(f"Indexing failed: {str(e)}")
 
@@ -359,7 +359,7 @@ with st.sidebar:
         if ui_key:
             os.environ["GROQ_API_KEY"] = ui_key
             st.success("Key applied for this session")
-            st.rerun()
+            st.return()
         else:
             st.caption("No key found — [get one free ↗](https://console.groq.com)")
 
