@@ -289,8 +289,8 @@ with st.sidebar:
     <div class="brand-mark">
         <div class="brand-glyph">D</div>
         <div class="brand-text">
-            <span class="brand-name">DocuMind</span>
-            <span class="brand-sub">Agentic Intelligence</span>
+            <span class="brand-name">Document</span>
+            <span class="brand-sub">Assistant Intelligence</span>
         </div>
     </div>
     """, unsafe_allow_html=True)
